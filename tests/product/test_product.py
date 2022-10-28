@@ -12,6 +12,7 @@ def test_cria_produto():
         'Ao abrigo de luz solar'
     )
     assert type(product.id) == int
+    assert not type(product.id) == str
     assert product.id == 1
     assert product.nome_do_produto == 'Borracha'
     assert product.nome_da_empresa == 'Papelaria Solar'
