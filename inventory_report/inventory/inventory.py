@@ -25,5 +25,5 @@ class Inventory:
         data = Inventory.file_reader(path)
         if type == "simples":
             return SimpleReport.generate(data)
-        else:
+        if type == "completo":
             return CompleteReport.generate(data)
